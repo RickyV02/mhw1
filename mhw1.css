@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: #14181c;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+a {
+  color: #d8e0e8;
+  text-decoration: none;
+}
+
+.logo {
+  width: calc(20% - 5px);
+}
+
+.mainp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 200px;
+}
+
+#box {
+  background-color: green;
+  border: solid green 7px;
+  border-radius: 3%;
+}
+
+.sfondo {
+  background-image: url(sfondo.png);
+  background-size: cover;
+  height: 400px;
+  margin-top: -3px;
+  margin-left: -3px;
+  margin-right: -3px;
+}
+
+.spam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spam img {
+  display: inline;
+  width: 22px;
+  margin: 0 7px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  flex-shrink: 0;
+  margin-left: 5px;
+}
+
+.wrap .foto {
+  width: 156px;
+  height: 231px;
+}
+
+.boxinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
