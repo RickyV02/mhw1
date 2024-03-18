@@ -15,9 +15,9 @@ header {
   margin-bottom: -23px;
 }
 
-section {
+.navsection {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   width: 950px;
@@ -25,13 +25,13 @@ section {
   color: #99aabb;
 }
 
-section nav {
+.navection nav {
   font-size: 1rem;
   margin-left: 15px;
 }
 
 a {
-  color: #d8e0e8;
+  color: white;
   text-decoration: none;
 }
 
@@ -44,13 +44,13 @@ a {
 }
 
 .container div {
-  background-image: url(sfondo.jpg);
+  background-image: url(public/sfondo.jpg);
   background-position: center center;
   background-size: cover;
   position: absolute;
   height: 675px;
   top: 0;
-  left: 10vh;
+  left: 20vh;
   width: 1200px;
   z-index: -1;
 }
@@ -61,10 +61,11 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 1200px;
   height: 100%;
   margin-top: -12%;
-  border: solid 3px red;
+  left: 20vh;
+  top: 0;
 }
 
 .wrapper h2 {
@@ -88,6 +89,10 @@ a {
   border-radius: 3px;
 }
 
+#spam:hover {
+  background-color: green;
+}
+
 .socials {
   margin-right: 0.5rem;
   margin-bottom: 0.7rem;
@@ -96,15 +101,11 @@ a {
   height: 26px;
   font-size: 17px;
   font-weight: 400;
+  margin-bottom: 5%;
 }
 
 .socials img {
   height: 26px;
-}
-
-.consigliati {
-  position: relative;
-  padding: 0 0 3rem;
 }
 
 .boxad {
@@ -112,14 +113,80 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
-  padding: 0 0 3.1rem;
-  height: 225px;
-  gap: 0.5rem;
-  margin-left: -10px;
+  width: 950px;
+  height: 265px;
+  padding: 0 0 3rem;
+  gap: 0.3rem;
   z-index: 0;
 }
 
 .boxad img {
-  border: 1px solid white;
-  height: 156px;
+  border-radius: 5px;
+  height: 231px;
+}
+
+#feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  padding-bottom: 3rem;
+  width: 950px;
+  height: 327px;
+}
+
+#feature h1 {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 20px 0px 10px;
+}
+
+.fbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 75%;
+}
+
+.fbox a {
+  display: flex;
+  justify-content: space-around;
+  background-color: #445566;
+  width: 310px;
+  height: 100px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.fbox a:hover {
+  background-color: orange;
+}
+
+.fbox a img {
+  width: 70px;
+  height: 40px;
+  padding: 16px 20px 18px;
+}
+
+.panel {
+  margin: 0 0 65px;
+  padding-top: 5px;
+  font-size: 14px;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+.fbox .azzurro:hover {
+  background-color: rgb(38, 81, 199);
+}
+
+.fbox .verde:hover {
+  background-color: rgb(4, 166, 4);
+}
+
+.fbox .arancione:hover {
+  background-color: orange;
 }
