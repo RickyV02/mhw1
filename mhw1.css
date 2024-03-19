@@ -271,29 +271,304 @@ a {
 .colonna1 {
   width: 630px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
-.colonna1 a {
+.top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 0;
+  position: relative;
+  padding: 0 0 2.5rem;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #456;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.075em;
+  margin-bottom: 0.76923077rem;
+  margin-top: 0;
+  padding-bottom: 5px;
+  width: 630px;
+}
+
+.news a {
   color: #678;
+  font-size: 13px;
+}
+
+.recensioni {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: none;
+  width: 630px;
+  height: auto;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 0;
+}
+
+.bloccorec {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0;
+  border-color: #2c3440;
+  border-bottom: 1px solid #456;
+  padding: 15px 0 18px;
+  line-height: 1.3;
+}
+
+.recensioni div a {
+  margin-right: 20px;
+  position: relative;
+}
+
+.film content {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.titolofilm {
+  display: flex;
+  width: 540px;
+  justify-content: flex-start;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 0 10px;
+  color: white;
+  line-height: 1.2;
+}
+
+.nomefilm {
+  font-family: TiemposTextWeb-Semibold, Georgia, serif;
+  font-size: 1.4rem;
+  margin-right: 5px;
+  line-height: 1.2;
+}
+
+.anno {
+  margin-top: 0.25rem;
+  color: #89a;
   font-size: 1rem;
 }
 
-.colonna1 h2 {
-  color: #9ab;
-  margin-top: 0;
-  padding-bottom: 5px;
+.utente {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 10px;
+  color: #678;
+}
+
+.locandina img {
+  border: 1px solid white;
+}
+
+.locandina img:hover {
+  border: 3px solid green;
+}
+
+.avatar {
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.likez {
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+}
+
+.nickname {
+  display: flex;
+  justify-content: space-between;
   font-size: 1rem;
+  line-height: 24px;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.avatar img {
+  height: 24px;
+  width: 24px;
+  border-radius: 10px;
+}
+
+.nickname {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+  line-height: 24px;
   font-weight: 400;
 }
 
-.colonna1 section {
+.stelline {
   position: relative;
-  border-top: 1px solid #456;
-  padding-top: 0.8rem;
+  top: -1px;
+}
+
+.commento {
+  margin-left: 0;
+  margin-right: 5px;
+  padding-left: 16px;
+  font-size: 1rem;
+  color: #667788;
+}
+
+.commento img {
+  height: 13px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.nickname strong a {
+  color: #abc;
+  font-size: 0.9rem;
+}
+
+.frase {
+  font-family: TiemposTextWeb-Regular, Georgia, serif;
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+.plike {
+  margin-bottom: 0;
+  margin-top: 15px;
+  line-height: 1.5;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
+  gap: 0.2rem;
+}
+
+.plike a {
+  font-weight: 400;
+  margin-right: 0.5em;
+  color: #678;
+  height: 16pxs;
+}
+
+.plike img {
+  height: 100%;
+  width: 15px;
+}
+
+.colonna2 {
+  width: 230px;
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.poplist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 0.7rem;
+  width: 230px;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  border-bottom: 1px solid #456;
+  width: 230px;
+  color: #9ab;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.075em;
+  margin-top: 0;
+  padding-bottom: 5px;
+}
+
+.lists a {
+  color: #678;
+  font-size: 13px;
+}
+
+.toplist {
+  width: 236px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.collezione {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 236px;
+}
+
+.toplist section a {
+  height: 111px;
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.toplist section a img {
+  width: 100%;
+  border-radius: 3px;
+  margin-left: -2px;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0.2rem;
+  color: #678;
+}
+
+.collezione h3 {
+  margin: 8px 0 4px;
+}
+
+.av {
+  height: 18px;
+  border-radius: 50%;
+  border: solid 1px white;
+}
+
+.user p {
+  flex-grow: 1;
+  font-size: 0.92307692rem;
+  line-height: 18px;
+  margin: 0;
+  width: 207px;
+}
+
+.user a {
+  height: 18px;
+  width: 18px;
+}
+
+.ic {
+  width: 15px;
+  height: 16px;
 }
