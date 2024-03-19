@@ -44,7 +44,7 @@ a {
 }
 
 .container div {
-  background-image: url(public/sfondo.jpg);
+  background-image: url(public/sfondo.png);
   background-position: center center;
   background-size: cover;
   position: absolute;
@@ -125,13 +125,17 @@ a {
   height: 231px;
 }
 
+.boxad img:hover {
+  border: 3px solid green;
+}
+
 #feature {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
   width: 950px;
   height: 327px;
 }
@@ -189,4 +193,107 @@ a {
 
 .fbox .arancione:hover {
   background-color: orange;
+}
+
+.livefeed {
+  position: relative;
+  padding: 0 0 2.46153846rem;
+  width: 950px;
+  height: 166px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.livefeed h2 {
+  color: #9ab;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0;
+  padding-bottom: 5px;
+}
+
+.livefeed div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 950px;
+  padding-top: 0.8rem;
+  border-top: 1px solid #456;
+}
+
+#counter {
+  color: #678;
+  font-size: 10px;
+  line-height: 1;
+  padding-top: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.livefeed img {
+  border: 1px solid white;
+}
+
+.livefeed img:hover {
+  border: 3px solid green;
+}
+
+.livefeed h1 {
+  margin: 0.7rem 0;
+  color: #abc;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+  font-weight: 400;
+}
+
+.word {
+  color: #89a;
+  margin: 0 0 3.69230769rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.word strong {
+  color: white;
+}
+
+.reviews {
+  display: flex;
+  width: 950px;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.colonna1 {
+  width: 630px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.colonna1 a {
+  color: #678;
+  font-size: 1rem;
+}
+
+.colonna1 h2 {
+  color: #9ab;
+  margin-top: 0;
+  padding-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.colonna1 section {
+  position: relative;
+  border-top: 1px solid #456;
+  padding-top: 0.8rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
 }
