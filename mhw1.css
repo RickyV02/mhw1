@@ -1,33 +1,30 @@
+@import url(https://db.onlinewebfonts.com/c/f82a45d96a5a30abb6417c5b81fc416d?family=Graphik+LC+Web+Semibold+Regular);
+@font-face {
+  font-family: "Graphik LC Web Semibold Regular";
+  src: url("https://db.onlinewebfonts.com/t/f82a45d96a5a30abb6417c5b81fc416d.eot");
+  src: url("https://db.onlinewebfonts.com/t/f82a45d96a5a30abb6417c5b81fc416d.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f82a45d96a5a30abb6417c5b81fc416d.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f82a45d96a5a30abb6417c5b81fc416d.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/f82a45d96a5a30abb6417c5b81fc416d.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f82a45d96a5a30abb6417c5b81fc416d.svg#Graphik LC Web Semibold Regular")
+      format("svg");
+}
+
 body {
   margin: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Graphik LC Web Semibold Regular";
   font-size: 13px;
   color: #9ab;
   background-color: #14181c;
+  overflow-x: hidden;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1350px;
-  height: 95px;
-  margin-bottom: -23px;
-}
-
-.navsection {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  width: 950px;
-  height: 72px;
-  color: #99aabb;
-}
-
-.navection nav {
-  font-size: 1rem;
-  margin-left: 15px;
+span {
+  font-weight: bold;
 }
 
 a {
@@ -35,11 +32,58 @@ a {
   text-decoration: none;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88vw;
+  height: 95px;
+  margin-bottom: -23px;
+}
+
+input {
+  border-radius: 20px;
+  border: none;
+  width: 140px;
+  height: 30px;
+  background-color: #445566;
+}
+
+.mobilenav {
+  display: none;
+}
+
+.logoletterbox {
+  display: none;
+}
+
+.navsection {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  align-items: center;
+  width: 62vw;
+  height: 72px;
+  color: #99aabb;
+}
+
+.navsection nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  gap: 10px;
+}
+
+.navsection nav a span {
+  color: #d8e0d8;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1350px;
+  width: 88vw;
   height: 675px;
 }
 
@@ -48,10 +92,10 @@ a {
   background-position: center center;
   background-size: cover;
   position: absolute;
+  left: 10vw;
   height: 675px;
   top: 0;
-  left: 20vh;
-  width: 1200px;
+  width: 78vw;
   z-index: -1;
 }
 
@@ -61,10 +105,10 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 1200px;
+  left: 10vw;
+  width: 78.3vw;
   height: 100%;
   margin-top: -12%;
-  left: 20vh;
   top: 0;
 }
 
@@ -97,10 +141,10 @@ a {
   margin-right: 0.5rem;
   margin-bottom: 0.7rem;
   text-align: center;
-  width: 950px;
+  width: 62vw;
   height: 26px;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: bold;
   margin-bottom: 5%;
 }
 
@@ -113,7 +157,7 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
-  width: 950px;
+  width: 62vw;
   height: 265px;
   padding: 0 0 3rem;
   gap: 0.3rem;
@@ -125,6 +169,10 @@ a {
   height: 231px;
 }
 
+.fotomobile {
+  display: none;
+}
+
 .boxad img:hover {
   border: 3px solid green;
 }
@@ -134,9 +182,8 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  position: relative;
   padding-bottom: 2.5rem;
-  width: 950px;
+  width: 62vw;
   height: 327px;
 }
 
@@ -155,22 +202,20 @@ a {
   height: 75%;
 }
 
-.fbox a {
+.arancione,
+.azzurro,
+.verde {
   display: flex;
   justify-content: space-around;
   background-color: #445566;
-  width: 310px;
+  width: 20.2vw;
   height: 100px;
   border: none;
   margin-bottom: 10px;
 }
 
-.fbox a:hover {
-  background-color: orange;
-}
-
 .fbox a img {
-  width: 70px;
+  width: 4.57vw;
   height: 40px;
   padding: 16px 20px 18px;
 }
@@ -183,23 +228,20 @@ a {
   line-height: 1.5;
 }
 
-.fbox .azzurro:hover {
+.azzurro:hover {
   background-color: rgb(38, 81, 199);
 }
 
-.fbox .verde:hover {
+.verde:hover {
   background-color: rgb(4, 166, 4);
 }
 
-.fbox .arancione:hover {
+.arancione:hover {
   background-color: orange;
 }
 
 .livefeed {
-  position: relative;
-  padding: 0 0 2.46153846rem;
-  width: 950px;
-  height: 166px;
+  width: 62vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -207,17 +249,15 @@ a {
 
 .livefeed h2 {
   color: #9ab;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-top: 0;
-  padding-bottom: 5px;
+  font-size: 13px;
+  margin-top: 1%;
 }
 
 .livefeed div {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
-  width: 950px;
+  width: 62vw;
   padding-top: 0.8rem;
   border-top: 1px solid #456;
 }
@@ -227,12 +267,11 @@ a {
   font-size: 10px;
   line-height: 1;
   padding-top: 5px;
-  position: absolute;
-  right: 0;
-  top: 0;
+  margin-bottom: 20px;
 }
 
 .livefeed img {
+  height: 100%;
   border: 1px solid white;
 }
 
@@ -240,13 +279,13 @@ a {
   border: 3px solid green;
 }
 
-.livefeed h1 {
-  margin: 0.7rem 0;
+h1 {
+  margin-top: 3rem;
   color: #abc;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1;
   text-align: center;
-  font-weight: 400;
+  overflow-wrap: break-word;
 }
 
 .word {
@@ -257,20 +296,20 @@ a {
   line-height: 1;
 }
 
-.word strong {
+.word span {
   color: white;
 }
 
 .reviews {
   display: flex;
-  width: 950px;
+  width: 62vw;
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 3rem;
 }
 
 .colonna1 {
-  width: 630px;
+  width: 41.1vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -283,7 +322,6 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 0;
-  position: relative;
   padding: 0 0 2.5rem;
 }
 
@@ -297,7 +335,7 @@ a {
   margin-bottom: 0.76923077rem;
   margin-top: 0;
   padding-bottom: 5px;
-  width: 630px;
+  width: 41.1vw;
 }
 
 .news a {
@@ -310,10 +348,9 @@ a {
   flex-direction: column;
   align-items: flex-start;
   border-top: none;
-  width: 630px;
+  width: 41.1vw;
   height: auto;
   margin-bottom: 15px;
-  position: relative;
   z-index: 0;
 }
 
@@ -329,11 +366,10 @@ a {
 
 .recensioni div a {
   margin-right: 20px;
-  position: relative;
 }
 
-.film content {
-  width: 540px;
+.film-content {
+  width: 35.2vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -342,7 +378,7 @@ a {
 
 .titolofilm {
   display: flex;
-  width: 540px;
+  width: 35.2vw;
   justify-content: flex-start;
   font-size: 1rem;
   font-weight: 400;
@@ -352,10 +388,11 @@ a {
 }
 
 .nomefilm {
-  font-family: TiemposTextWeb-Semibold, Georgia, serif;
+  font-family: Georgia, serif;
   font-size: 1.4rem;
   margin-right: 5px;
   line-height: 1.2;
+  font-weight: bold;
 }
 
 .anno {
@@ -366,7 +403,7 @@ a {
 
 .utente {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   margin-top: 2rem;
   margin-bottom: 10px;
   color: #678;
@@ -381,29 +418,19 @@ a {
 }
 
 .avatar {
-  flex-grow: 0;
-  flex-shrink: 0;
+  margin-top: 15px;
   align-self: flex-start;
 }
 
 .likez {
   display: flex;
-  width: 100px;
+  width: 6.52vw;
   justify-content: space-around;
-}
-
-.nickname {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1rem;
-  line-height: 24px;
-  flex-grow: 1;
-  margin: 0;
 }
 
 .avatar img {
   height: 24px;
-  width: 24px;
+  width: 1.56vw;
   border-radius: 10px;
 }
 
@@ -411,10 +438,12 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  margin-right: 10px;
   font-size: 1rem;
   line-height: 24px;
-  font-weight: 400;
+}
+
+.nickname a {
+  font-weight: bold;
 }
 
 .stelline {
@@ -440,13 +469,14 @@ a {
   margin-right: 5px;
 }
 
-.nickname strong a {
+.nickname a {
   color: #abc;
   font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .frase {
-  font-family: TiemposTextWeb-Regular, Georgia, serif;
+  font-family: Georgia, serif;
   margin-bottom: 10px;
   font-size: 1.15rem;
   line-height: 1.5;
@@ -471,11 +501,11 @@ a {
 
 .plike img {
   height: 100%;
-  width: 15px;
+  width: 0.97vw;
 }
 
 .colonna2 {
-  width: 230px;
+  width: 15vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -489,7 +519,7 @@ a {
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 0.7rem;
-  width: 230px;
+  width: 15vw;
 }
 
 .lists {
@@ -498,7 +528,7 @@ a {
   align-items: flex-start;
   flex-direction: row;
   border-bottom: 1px solid #456;
-  width: 230px;
+  width: 15vw;
   color: #9ab;
   font-size: 1rem;
   font-weight: 400;
@@ -514,7 +544,7 @@ a {
 }
 
 .toplist {
-  width: 236px;
+  width: 15.4vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -527,7 +557,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 236px;
+  width: 15.4vw;
 }
 
 .ac {
@@ -551,7 +581,7 @@ a {
 }
 
 .user a {
-  width: 30px;
+  width: 1.95vw;
   flex-grow: 0;
   flex-shrink: 1;
   align-self: flex-start;
@@ -575,12 +605,12 @@ a {
   font-size: 0.9rem;
   line-height: 18px;
   margin: 0;
-  width: 207px;
+  width: 13.5vw;
 }
 
 .user a {
   height: 18px;
-  width: 18px;
+  width: 1.18vw;
 }
 
 .user a:hover {
@@ -588,7 +618,7 @@ a {
 }
 
 .ic {
-  width: 15px;
+  width: 0.98vw;
   height: 16px;
 }
 
@@ -607,7 +637,7 @@ a {
   align-items: flex-start;
   flex-direction: row;
   border-bottom: 1px solid #456;
-  width: 230px;
+  width: 15vw;
   color: #9ab;
   font-size: 1rem;
   font-weight: 400;
@@ -627,7 +657,7 @@ a {
   align-items: flex-start;
   flex-direction: column;
   gap: 0.3rem;
-  width: 230px;
+  width: 15vw;
   height: 40px;
 }
 
@@ -647,9 +677,10 @@ a {
   border: 1px solid white;
 }
 
-.avrname strong {
+.avrname {
   color: white;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .infos {
@@ -667,7 +698,7 @@ a {
 }
 
 .recentstories {
-  width: 950px;
+  width: 62vw;
   margin-bottom: 1rem;
 }
 
@@ -688,7 +719,7 @@ a {
 .rcbody {
   display: flex;
   flex-wrap: wrap;
-  width: 950px;
+  width: 62vw;
   margin-left: -5px;
   margin-right: -5px;
   padding-left: 5px;
@@ -698,7 +729,7 @@ a {
 
 .articolo {
   background-color: #202830;
-  width: 300px;
+  width: 19.6vw;
   flex-grow: 0;
   display: flex;
   height: fit-content;
@@ -709,7 +740,7 @@ a {
 }
 
 .new-width {
-  width: 950px;
+  width: 62vw;
 }
 
 .immaginearticolo {
@@ -722,12 +753,12 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 300px;
+  width: 19.6vw;
 }
 
 .headerarticolo {
   display: flex;
-  width: 300px;
+  width: 19.6vw;
   justify-content: flex-start;
   gap: 0.3rem;
   height: 24px;
@@ -753,6 +784,7 @@ a {
 .readmore {
   color: #aabbcc;
   margin-top: 1.5rem;
+  font-weight: bold;
 }
 
 .readmore:hover {
@@ -765,7 +797,8 @@ a {
   height: auto;
   color: white;
   font-size: 1.5rem;
-  font-family: TiemposTextWeb-Regular, Georgia, serif;
+  font-weight: bold;
+  font-family: Georgia, serif;
 }
 
 .readstory {
@@ -777,7 +810,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   gap: 0.3rem;
-  width: 960px;
+  width: 62.6vw;
 }
 
 .sectionews {
@@ -811,19 +844,24 @@ a {
   width: fit-content;
   margin-top: 0.3rem;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .newsblock p {
-  width: 310px;
+  width: 20.2vw;
   font-size: 0.8rem;
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #2c3440;
   padding: 32px 0;
   padding-bottom: 40px;
   margin-top: 10vh;
-  width: 1480px;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .footer-wrapper {
@@ -831,7 +869,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  width: 950px;
+  width: 62vw;
   margin: 0 auto;
 }
 
@@ -847,4 +885,333 @@ footer {
 .footer-links {
   color: #9ab;
   font-size: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    background-color: #14181c;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.2rem;
+    width: 91vw;
+    padding: 0px 16px;
+  }
+  .navsection {
+    display: none;
+  }
+  .mobilenav {
+    display: flex;
+    gap: 0.3rem;
+  }
+  .mobilenav a img {
+    height: 30px;
+    width: auto;
+  }
+
+  .wrapper {
+    width: 91vw;
+    margin-top: 1%;
+    right: 16px;
+    left: 16px;
+  }
+
+  .container {
+    height: 220px;
+    width: 97vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .container div {
+    height: 220px;
+    margin-top: 1vh;
+    left: 0;
+    width: 100vw;
+  }
+
+  .logoletterbox {
+    display: block;
+    height: 30px;
+    margin-bottom: 4%;
+  }
+
+  .wrapper h2 {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: -0.6em;
+  }
+  #spam {
+    width: fit-content;
+    height: fit-content;
+    font-size: 1rem;
+  }
+  .socials {
+    margin-bottom: 1rem;
+    height: fit-content;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+
+  .socials img {
+    height: 20px;
+  }
+
+  .nascondi {
+    display: none;
+  }
+  .boxad {
+    width: 70vw;
+    height: 130px;
+    margin-bottom: -20%;
+  }
+
+  .boxad img {
+    width: 100%;
+    height: 100%;
+  }
+  #feature {
+    gap: 2rem;
+    height: 950px;
+  }
+  #feature h1 {
+    font-size: 14px;
+    margin-left: -18%;
+    margin-bottom: -3%;
+    margin-top: 10%;
+  }
+  .fbox {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 612px;
+    width: 91vw;
+    align-self: center;
+    padding-left: 25px;
+  }
+
+  .panel {
+    margin-left: 15px;
+  }
+
+  .fbox a {
+    display: flex;
+    width: 75vw;
+    padding: 0px 20px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    flex-grow: 1;
+  }
+
+  .fbox a img {
+    width: 50px;
+    height: 33px;
+    margin-top: 10px;
+  }
+
+  .livefeed {
+    height: 350px;
+    width: 80vw;
+  }
+
+  .livefeed div {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    height: 270px;
+    gap: 0.1rem;
+  }
+
+  .livefeed div a {
+    height: 90px;
+  }
+  .livefeed h2 {
+    margin-bottom: 0;
+    height: fit-content;
+  }
+  .livefeed p {
+    height: fit-content;
+  }
+
+  .livefeed h1 {
+    overflow-wrap: break-word;
+    height: 368px;
+    width: 70vw;
+  }
+
+  .reviews {
+    flex-direction: column;
+  }
+
+  .top {
+    width: 80vw;
+  }
+
+  .news {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .colonna1,
+  .colonna2 {
+    margin-left: -20%;
+  }
+
+  .recensioni {
+    width: 80vw;
+  }
+
+  .utente {
+    flex-wrap: wrap;
+  }
+
+  .titolofilm {
+    flex-direction: column;
+  }
+
+  .avatar img {
+    height: 24px;
+    width: 24px;
+  }
+
+  .bloccorec {
+    width: 80vw;
+  }
+
+  .film-content {
+    width: 60vw;
+  }
+
+  .nickname {
+    overflow-wrap: break-word;
+  }
+
+  .titolofilm {
+    width: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nomefilm {
+    width: 100%;
+  }
+
+  .locandina {
+    height: fit-content;
+  }
+
+  .utente {
+    margin-top: 0.1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .nickname {
+    flex-direction: column;
+    margin-top: -5px;
+    width: 50vw;
+  }
+  .nickname a {
+    margin-top: 2%;
+  }
+
+  .commento {
+    margin-left: -8%;
+  }
+
+  .frase {
+    margin-top: -10%;
+  }
+
+  .likez {
+    justify-content: space-between;
+    width: 25vw;
+  }
+
+  .likez img {
+    height: 16px;
+    width: 15px;
+  }
+
+  .poplist {
+    width: 80vw;
+  }
+
+  .lists {
+    width: 100%;
+  }
+
+  .toplist {
+    width: 100%;
+  }
+
+  .collezione {
+    width: 100%;
+  }
+
+  .ac {
+    height: 162px;
+    margin-bottom: -5%;
+  }
+
+  .popreviews {
+    display: none;
+  }
+
+  .av,.ic {
+    height: 18px;
+    width: 18px;
+  }
+
+  .user {
+    gap: 20px;
+  }
+
+  .recentstories{
+    width: 80vw;
+  }
+  .rcbody{
+    width: 100%;
+  }
+  .articolo{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .recentshowdowns{
+    width: 80vw;
+    height: 800px;
+  }
+
+  .sectionews{
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .newsblock p{
+    width: 100%;
+  }
+
+  .recentnews{
+    width: 80vw;
+    height: 750px;
+  }
+
+  .footer{
+    width: 97vw;
+  }
+
+  .footer-wrapper{
+    width: 80%;
+  }
+
+  .footer-nav{
+    width: 100%;
+    align-items: center;
+    margin-left: -2%;
+  }
 }
