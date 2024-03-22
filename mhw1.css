@@ -1020,9 +1020,9 @@ footer {
   }
 
   .livefeed {
-    height: 350px;
+    height: 400px;
     width: 80vw;
-    margin-bottom: -17%;
+    margin-bottom: -15%;
   }
 
   .livefeed div {
@@ -1162,7 +1162,6 @@ footer {
 
   .ac {
     height: 162px;
-    margin-bottom: -5%;
   }
 
   .popreviews {
